@@ -10,7 +10,7 @@ typedef struct{
 
 /**
  * \brief 一元二次方程式(QE)
- * \param a x^2solveQuantity項
+ * \param a x^2項
  * \param b x^1項
  * \param c 常數項
  * \return 專用的QE_return結構
