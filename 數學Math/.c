@@ -1,3 +1,6 @@
+#include<stdlib.h>
+#include<math.h>
+
 //solveQE之回傳值
 typedef struct{
 	double x1;	/**< 根1 */
