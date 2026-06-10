@@ -39,3 +39,27 @@ QE_return* solveQE(double a, double b, double c) {
 	}
 	return out;
 }
+/**
+ * \brief 費氏數列(Fibonacci sequence)
+ * \param n 要計算的費氏數列項數
+ * \return 第n項的費氏數列值
+ */
+// 迭代版本
+long long fib_iter(int n) {
+    if (n <= 0) return 0;
+    if (n == 1) return 1;
+    
+    long long a = 0, b = 1, temp;
+    for (int i = 2; i <= n; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+}
+
+// 遞迴版本
+long long fib_rec(int n) {
+    if (n <= 1) return n;
+    return fib_rec(n - 1) + fib_rec(n - 2);
+}
